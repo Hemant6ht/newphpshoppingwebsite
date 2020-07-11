@@ -1,0 +1,26 @@
+.google iframe{
+    width:40vw;
+    height: 37vw;
+    border:2px solid gray;
+}
+
+@media screen and (max-width:993px){
+    .google iframe{
+        width:80vw;
+    } 
+}
+@media screen and (max-width:820px){
+    .google iframe{
+        width:87vw;
+    } 
+}
+@media screen and (max-width:768px){
+    .google iframe{
+        width:94vw;
+    } 
+}
+@media screen and (max-width:400px){
+    .google iframe{
+        width:90vw;
+    } 
+}

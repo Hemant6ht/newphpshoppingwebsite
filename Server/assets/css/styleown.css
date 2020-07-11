@@ -1,0 +1,14 @@
+.active-user{
+    background-color: lightgreen;
+    color:white;
+    border: none;
+    cursor: pointer;
+    width:100px;
+}
+.blocked-user{
+    background-color:lightcoral;
+    color:white;
+    border: none;
+    cursor: pointer;
+    width:100px;
+}

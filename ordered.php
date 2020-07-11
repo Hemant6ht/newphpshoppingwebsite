@@ -1,0 +1,30 @@
+<?php
+session_start();
+if(isset($_SESSION['user']))
+{
+   if(isset($_POST['sbt']))
+   {
+     $user=$_SESSION['user'];
+     $pid=$_POST['pid'];
+     $pname=$_POST['pname'];
+     $quantity=$_POST['quantity'];
+     $name=$_POST['name'];
+     $mobile=$_POST['mobile'];
+     $address=$_POST['address'];
+     $imgsrc=$_POST['imgsrc'];
+     $tp=$_POST['total_price'];
+     $mop=$_POST['paymentmode'];
+     require('./connect.php');
+     $qry="INSERT INTO orders (p_id,p_name,user,quantity,recpname,mobile,address,total,mpo,p_img) VALUES ('$pid','$pname','$user','$quantity','$name','$mobile','$address','$tp','$mop','$imgsrc')";
+     mysqli_query($con,$qry);
+     header('location:./thankyou.php');
+   }
+   else
+   {
+    header('location:./index.php');
+   }
+}
+else
+{
+    header('location:./loginregister.php');
+}
