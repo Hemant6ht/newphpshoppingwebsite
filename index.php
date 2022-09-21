@@ -129,7 +129,7 @@ $num=mysqli_num_rows($res);
                                         </a>
                                     </div>
                                     <div class="fr__product__inner">
-                                        <h4><a href="product-details.html"><?php echo $rwp['p_name'];?></a></h4>
+                                        <h4><a href=<?php echo "'./productdetails.php?pid=".$rwp['p_id']."'"?>><?php echo $rwp['p_name'];?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li><?php echo "Rs. ".$rwp['p_price'];?></li>
                                         </ul>

@@ -90,7 +90,7 @@ else
                                                     </a>
                                                 </div>
                                                 <div class="fr__product__inner">
-                                                    <h4><a href="product-details.html"><?php echo $rwar['p_name'] ?></a></h4>
+                                                    <h4><a href=<?php echo "'./productdetails.php?pid=".$rwar['p_id']."'"?>><?php echo $rwar['p_name'] ?></a></h4>
                                                     <ul class="fr__pro__prize">
                                                         <li><?php echo "Rs. ".$rwar['p_price']; ?></li>
                                                     </ul>

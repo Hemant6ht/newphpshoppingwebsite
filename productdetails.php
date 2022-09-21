@@ -198,7 +198,7 @@ else
                                     </a>
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4><a href="product-details.html"><?php echo $rwarp['p_name']?></a></h4>
+                                    <h4><a href=<?php echo "'./productdetails.php?pid=".$rwarp['p_id']."'"?>><?php echo $rwarp['p_name']?></a></h4>
                                     <ul class="fr__pro__prize">
                                         <li><?php echo "Rs. ".$rwarp['p_price']?></li>
                                     </ul>
